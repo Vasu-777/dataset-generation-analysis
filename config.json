@@ -1,0 +1,77 @@
+{
+    "operation": "csv",
+    "tableName": "1000_temp_churn_data.csv",
+    "num_rows": 1000,
+    "date": {
+        "startdate": "2007, 1, 1",
+        "enddate": "2022, 12, 31",
+        "date_order": "weekly",
+        "incrementDateByNumber": "1"
+    },
+    "datatype": {
+        "id": "SERIAL PRIMARY KEY",
+        "firstname": "VARCHAR(50)",
+        "lastname": "VARCHAR(50)",
+        "gender": "VARCHAR(10)",
+        "incomerange": "VARCHAR(10)",
+        "int": "INTEGER",
+        "float": "Float",
+        "str": "VARCHAR(50)",
+        "bool": "Boolean",
+        "date": "Date"
+    },
+    "thisdict": {
+        "id": 0,
+        "firstname": 0,
+        "lastname": 0,
+        "gender": 0,
+        "incomerange": 0,
+        "internettype": 0,
+        "contract": 0,
+        "payment_method": 0,
+        "city": 0,
+        "churn_category": 0,
+        "under_30": 0,
+        "offer": 0,
+        "int": 0,
+        "float": 0,
+        "str": 0,
+        "bool": 0,
+        "date": 0
+    },
+    "colname": {
+        "id": ["customer_id"],
+        "firstname": [],
+        "lastname": [],
+        "gender": ["gender"],
+        "incomerange": ["incomerange"],
+        "internettype": [],
+        "contract": [],
+        "payment_method": [],
+        "city": ["city"],
+        "churn_category": [],
+        "under_30": ["under_30"],
+        "offer": [],
+        "int": [],
+        "float": [
+            "total_regular_charges"
+        ],
+        "str": [],
+        "bool": [],
+        "date": ["datadate"]
+    },
+    "oracle_db": {
+        "username": "your_oracle_db_username",
+        "password": "your_oracle_db_password",
+        "host": "your_oracle_db_host",
+        "port": "your_oracle_db_port",
+        "service": "your_oracle_db_service"
+    },
+    "postgre_db": {
+        "dbname": "incedodsp",
+        "username": "postgres",
+        "password": "Airflow@99",
+        "host": "idsp.incedolabs.com",
+        "port": "5432"
+    }
+}

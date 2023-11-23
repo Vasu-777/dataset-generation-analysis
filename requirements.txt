@@ -1,0 +1,7 @@
+names
+faker
+datetime
+sqlalchemy
+sqlalchemy.orm
+psycopg2
+pandas
